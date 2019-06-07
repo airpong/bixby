@@ -1,0 +1,21 @@
+action (Availabletime) {
+  type(Search)
+  description (show available time of movie in selected theater)
+  collect {
+    input (movietext) {
+      type (Movietext)
+      min (Required) max (One)
+    }
+    input (result){
+      type(Result)
+      default-init{
+        intent{
+          goal:Findtheater
+        }
+      }  
+      min (Required) max (One)
+    }
+    
+  }
+  output (Availableresult)
+}

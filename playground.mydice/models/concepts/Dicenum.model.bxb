@@ -1,0 +1,3 @@
+integer (Dicenum) {
+  description (__DESCRIPTION__)
+}

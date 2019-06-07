@@ -1,0 +1,16 @@
+action (onemovie) {
+  description (__DESCRIPTION__)
+  collect {
+    input (movieinput) {
+      type (Movie)
+      min (Required) max (One)
+    }
+  }
+  output (Onemovie){
+    evaluate{
+      Onemovie{
+        movie: $expr(movieinput)
+      }
+  }
+}
+}

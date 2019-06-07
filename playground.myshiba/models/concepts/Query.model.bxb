@@ -1,0 +1,11 @@
+structure (Query) {
+  description (__DESCRIPTION__)
+  property (one) {
+    type (One)
+    min (Required) max (One)
+  }
+  property (many) {
+    type (Many)
+    min (Required) max (One)
+  }
+}

@@ -1,0 +1,10 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (showimage) {
+      accepted-inputs (query)
+      local-endpoint (showimage.js)
+    }
+
+
+  }
+}

@@ -1,0 +1,24 @@
+layout-macro-def (showonemovie) {
+  params {
+    param (onething) {
+      type (Movie)
+      min (Required) max (One)
+    }
+  }
+  content {
+    image-card {
+      aspect-ratio(4:3)
+      image-url ("#{value(onething.poster.url)}")
+      title-area {
+        halign (Start)
+        slot1 {
+          text {
+            value ("#{value(onething.vote)}")
+            style (Title_L)
+          }
+        }
+      }
+     
+    }
+  }
+}

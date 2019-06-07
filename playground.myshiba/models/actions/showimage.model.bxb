@@ -1,0 +1,12 @@
+action (showimage) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (query) {
+      type (Query)
+      min (Required) max (One)
+      prompt-behavior (AlwaysSelection)
+    }
+  }
+  output (Result)
+}

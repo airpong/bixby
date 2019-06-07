@@ -1,0 +1,5 @@
+train (t-o71d9ogekipqlyfyqd7ptmsq4) {
+  utterance ([g:Result] 영화관 찾아줘)
+  plan (Y2BkkC3ISaxML8ovzUvRS8vMSynJSE0sSS3SC0otLs0pYQABRhABAA==)
+  last-modified (1559720268636)
+}

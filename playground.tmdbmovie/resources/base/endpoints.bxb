@@ -1,0 +1,16 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (Searchmovie) {
+      local-endpoint (Searchmovie.js)
+    }
+    action-endpoint (Findtheater) {
+      accepted-inputs (self,point)
+      local-endpoint (Findtheater.js)
+    }
+    action-endpoint (Availabletime) {
+      accepted-inputs (movietext,result)
+      local-endpoint (Availabletime.js)
+    }
+  }
+  
+}

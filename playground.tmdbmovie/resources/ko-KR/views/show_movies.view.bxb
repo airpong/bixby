@@ -1,0 +1,19 @@
+result-view {
+  match: Movies (movies) {
+    min (Required) max (Many)
+  }
+  message("결과를 확인해 보세요.")
+  render {
+    list-of (movie) {
+      where-each (onemovie) {
+        layout-macro (showmovie) {
+          param (onething) {
+            expression(onemovie)
+          }
+        }
+        
+      }
+      
+    }
+  }
+}

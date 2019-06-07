@@ -1,0 +1,15 @@
+action (Showonetheater) {
+  description (__DESCRIPTION__)
+  collect {
+    input (otot) {
+      type (OneT)
+      min (Optional) max (One)
+      prompt-behavior (AlwaysSelection)
+    }
+  }
+  output (OneT){
+    evaluate{
+      $expr(otot)  
+    }
+  }
+}

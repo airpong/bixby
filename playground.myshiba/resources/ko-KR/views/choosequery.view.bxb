@@ -1,0 +1,29 @@
+input-view{
+  match:Query(this)
+  message("어떻게 가져올까용?")
+  render{
+    form{
+      on-submit{
+        goal:Query
+        value:Query{
+          one: viv.core.FormElement(one)
+          many: viv.core.FormElement(many)
+        }
+      }
+      elements{
+        checkbox{
+          id("one")
+          type(One)
+          primary-text("하나만봅시다.")
+          value("#{raw(this.one)}")
+        }
+        checkbox{
+          id("many")
+          type(Many)
+          primary-text("여러개 봅시다.")
+          value("#{raw(this.many)}")
+        }
+      }
+    }
+  }
+}

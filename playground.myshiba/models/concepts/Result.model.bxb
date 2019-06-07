@@ -1,0 +1,7 @@
+structure (Result) {
+  description (__DESCRIPTION__)
+  property (photo) {
+    type (Photo)
+    min (Required) max (Many)
+  }
+}

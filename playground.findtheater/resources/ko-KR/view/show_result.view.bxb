@@ -1,0 +1,34 @@
+result-view{
+  match:Result(this)
+  message("가까운 순으로 영화관을 찾았어요!")
+  render {
+    if(size(this) == 1){
+      layout{
+        layout-macro (show_detail){
+          param(info){
+            expression (this)
+          }
+        }
+       
+      }
+      
+    }else{
+      list-of (this){
+        where-each (item){
+          layout-macro (theaterlist){
+            param(theater){
+              expression (item)
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+  conversation-drivers{
+    conversation-driver{
+      template ("젤 위에꺼 검색해줘")
+    }
+  }
+}

@@ -1,0 +1,10 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (rolldice) {
+      accepted-inputs (dicenum,sidenum)
+      local-endpoint (rolldice.js)
+    }
+
+    
+  }
+}

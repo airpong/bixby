@@ -1,0 +1,12 @@
+result-view {
+  match: Result (this)
+
+  message("결과값볼까용??")
+
+  render {
+    // 결과 값 갯수에 따라 다르게 보여주도록 설정 (https://bixbydevelopers.com/dev/docs/reference/ui-kit/output.image-list-of)
+    image-list-of (photo){
+      size(Small)
+    }
+  }
+}

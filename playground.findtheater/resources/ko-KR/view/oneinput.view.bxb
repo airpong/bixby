@@ -1,0 +1,19 @@
+input-view{
+  match:Result(tmpresult){
+    to-input:Showonetheater(action)
+  }
+    
+  
+  message("영화관 하나를 먼저 골라주세요.")
+  render{
+    selection-of (tmpresult){
+      where-each (item){
+        layout-macro (theaterlist){
+            param(theater){
+              expression (item)
+            }
+          }
+      }
+    }
+  }
+}

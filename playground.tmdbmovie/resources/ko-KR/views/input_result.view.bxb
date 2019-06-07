@@ -1,0 +1,17 @@
+input-view{
+  match:Result(this){
+    to-input:Availabletime(action)
+  }
+  message("골라보세욤")
+  render{
+    selection-of (this){
+      where-each (item){
+        layout-macro (theaterlist){
+          param (theater){
+            expression (item)
+          }
+        }
+      }
+    }
+  }
+}

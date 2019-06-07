@@ -1,0 +1,15 @@
+action (plusaction) {
+  type(Calculation)
+  description (__DESCRIPTION__)
+  collect {
+    input (Left) {
+      type (left)
+      min (Required) max (One)
+    }
+    input (Right) {
+      type (right)
+      min (Required) max (One)
+    }
+  }
+  output (result)
+}

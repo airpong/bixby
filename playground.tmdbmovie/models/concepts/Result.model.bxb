@@ -1,0 +1,23 @@
+structure (Result) {
+  description (__DESCRIPTION__)
+  property (name) {
+    type (Name)
+    min (Optional) max (One)
+  }
+  property (flag) {
+    type (Flag)
+    min (Optional) max (One)
+  }
+  property (point) {
+    type (Point)
+    min (Optional) max (One)
+  }
+  property (location) {
+    type (Location)
+    min (Optional) max (One)
+  }
+  property (distance) {
+    type (Distance)
+    min (Optional) max (One)
+  }
+}

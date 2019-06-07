@@ -1,0 +1,5 @@
+train (t-x8wsteh3k3jznjtmz3ujqc9a9) {
+  utterance ("[g:result] (3)[v:left] 더하기 (4)[v:right]는 얼마야?")
+  plan (Y2BhECvISaxML8ovzUvRK8gpLdYrSi0uzSlhkEIXBxGJySWZ+XkMIuhyOalpJQyiGCZlpmeUMDAzMDIwAUkGIA2CEADig0UB)
+  last-modified (1559028750155)
+}

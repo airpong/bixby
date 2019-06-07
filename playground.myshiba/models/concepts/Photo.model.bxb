@@ -1,0 +1,4 @@
+structure (Photo) {
+  description (__DESCRIPTION__)
+  role-of (viv.core.BaseImage)
+}

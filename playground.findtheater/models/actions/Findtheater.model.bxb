@@ -1,0 +1,24 @@
+action (Findtheater) {
+  description (__DESCRIPTION__)
+  collect {
+    input (self) {
+      type (self.Self)
+      min (Required) max (One)
+    }
+    computed-input (point){
+      type(Point)
+      compute{
+        intent{
+          goal:Point
+          route:geo.CurrentLocation
+        }
+      }
+    }
+    
+    }
+
+  output (Result){
+
+  }
+
+}

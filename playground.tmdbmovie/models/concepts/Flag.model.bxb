@@ -1,0 +1,3 @@
+boolean (Flag) {
+  description (__DESCRIPTION__)
+}

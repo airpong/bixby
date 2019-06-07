@@ -1,0 +1,15 @@
+structure (Movie) {
+  description (__DESCRIPTION__)
+  property (title) {
+    type (Title)
+    min (Required) max (One)
+  }
+  property (vote) {
+    type (Vote)
+    min (Required) max (One)
+  }
+  property (poster) {
+    type (Poster)
+    min (Required) max (One)
+  }
+}

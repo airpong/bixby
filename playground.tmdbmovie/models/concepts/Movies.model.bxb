@@ -1,0 +1,7 @@
+structure (Movies) {
+  description (structer consisted of movie)
+  property (movie) {
+    type (Movie)
+    min (Optional) max (Many)
+  }
+}

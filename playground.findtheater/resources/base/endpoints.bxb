@@ -1,0 +1,10 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (Findtheater) {
+      accepted-inputs (self,point)
+      local-endpoint (Findtheater.js)
+    }
+
+
+  }
+}

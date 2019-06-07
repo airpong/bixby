@@ -1,0 +1,18 @@
+result-view {
+  match: Onemovie (onemovie) {
+    min (Required) max (One)
+  }
+  message("디테일결과.")
+  render {
+    layout-macro (showonemovie) {
+      param (onething) {
+        expression(movie)
+      }
+    }
+  }
+  conversation-drivers{
+    conversation-driver{
+      template ("#{value(onemovie.movie.title)} 볼수있는 시간은 언제야?")
+    }
+  }
+}

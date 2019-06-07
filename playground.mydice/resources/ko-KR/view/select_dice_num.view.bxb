@@ -1,0 +1,18 @@
+input-view{
+  match:Dicenum(this)
+  message("주사위 몇개 굴릴려고?")
+  render{
+    form{
+      elements{
+        number-input{
+          id(numofdice)
+          type(Dicenum)
+        }
+      }
+      on-submit{
+        goal:Dicenum
+        value:viv.core.FormElement(numofdice)
+      }
+    }
+  }
+}

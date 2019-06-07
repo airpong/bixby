@@ -1,0 +1,17 @@
+action (rolldice) {
+  type(Calculation)
+  description (__DESCRIPTION__)
+  collect {
+    input (dicenum) {
+      type (Dicenum)
+      min (Optional) max (One)
+      prompt-behavior (AlwaysSelection)
+    }
+    input (sidenum) {
+      type (Sidenum)
+      min (Optional) max (One)
+      
+    }
+  }
+  output (Result)
+}

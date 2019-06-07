@@ -1,0 +1,8 @@
+action (Searchmovie) {
+  description (send request to tmdb and get movie list of playing now)
+  type(Search)
+  collect {
+    
+  }
+  output (Movies)
+}

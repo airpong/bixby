@@ -1,0 +1,7 @@
+structure (Onemovie) {
+  description (__DESCRIPTION__)
+  property (movie) {
+    type (Movie)
+    min (Required) max (One)
+  }
+}
